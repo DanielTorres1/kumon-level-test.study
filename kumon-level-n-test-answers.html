@@ -47,85 +47,324 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Kumon Level N Test Answers</h1>
-            <p>Verified solutions, sheet previews, and explanation guides for the Kumon Level N Algebra and Calculus exam.</p>
-        </div>
-    </section>
-
     <!-- Main Container -->
-    <main class="container">
+    <main class="container" style="margin-top: 2rem;">
         
-        <!-- Concept Introduction -->
-        <article class="intro-card">
-            <h2 class="section-title">Kumon Level N Curriculum Overview</h2>
-            <p>Level N is a transitional phase that bridges advanced high school algebra with differential calculus. To successfully obtain your certificate and move on to the final Level O, you must demonstrate proficiency in graphing functions, dealing with locus coordinates, solving polynomial sequences, and evaluating mathematical limits.</p>
-            <br>
-            <p>Our study guide provides high-resolution, verified test answers. Review the solutions below, analyze the algebraic derivations, and use them as reference material to debug errors in your practice sessions.</p>
-        </article>
+        <h1 class="section-title" style="font-size: 2.25rem; margin-bottom: 0.5rem;">Kumon Level N Test Answers</h1>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Select a question from the horizontal menu below to view the verified answer sheet and core mathematical concepts. Click on the image to zoom in.</p>
+        
+        <div class="tabs-container">
+            <!-- Scrollable Tab Bar -->
+            <div class="tabs-nav-wrapper">
+                <div class="tabs-nav" id="tabsNav">
+                    <button class="tab-btn active" onclick="switchTab('q1')">Q1</button>
+                    <button class="tab-btn" onclick="switchTab('q2')">Q2</button>
+                    <button class="tab-btn" onclick="switchTab('q3')">Q3</button>
+                    <button class="tab-btn" onclick="switchTab('q4')">Q4</button>
+                    <button class="tab-btn" onclick="switchTab('q5')">Q5</button>
+                    <button class="tab-btn" onclick="switchTab('q6')">Q6</button>
+                    <button class="tab-btn" onclick="switchTab('q7')">Q7</button>
+                    <button class="tab-btn" onclick="switchTab('q8')">Q8</button>
+                    <button class="tab-btn" onclick="switchTab('q9')">Q9</button>
+                    <button class="tab-btn" onclick="switchTab('q10')">Q10</button>
+                    <button class="tab-btn" onclick="switchTab('q11')">Q11</button>
+                    <button class="tab-btn" onclick="switchTab('q12')">Q12</button>
+                    <button class="tab-btn" onclick="switchTab('q13')">Q13</button>
+                    <button class="tab-btn" onclick="switchTab('q14')">Q14</button>
+                    <button class="tab-btn" onclick="switchTab('q15')">Q15</button>
+                    <button class="tab-btn" onclick="switchTab('q16')">Q16</button>
+                    <button class="tab-btn" onclick="switchTab('q17')">Q17</button>
+                    <button class="tab-btn" onclick="switchTab('q18')">Q18</button>
+                    <button class="tab-btn" onclick="switchTab('q19')">Q19</button>
+                    <button class="tab-btn" onclick="switchTab('q20')">Q20</button>
+                </div>
+            </div>
 
-        <!-- Test Sheets Showcase Section -->
-        <section class="showcase-section">
-            <h2 class="section-title">Kumon Level N Answer Sheets</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Click or tap on any answer sheet image below to open the fullscreen zoom viewer. Examine the mathematical derivations in detail.</p>
-            
-            <div class="image-gallery">
+            <!-- Tab Panels Area -->
+            <div class="tabs-content">
                 
-                <!-- Sheet 1 -->
-                <div class="image-card">
-                    <div class="image-wrapper" onclick="openLightbox('images/kumon-math-level-n-test-answers-1.jpeg')">
-                        <img src="images/kumon-math-level-n-test-answers-1.jpeg" alt="Kumon Level N Math Test Answers Page 1">
-                        <div class="image-overlay">🔍 Click to Zoom</div>
+                <!-- Q1 Panel -->
+                <div class="tab-panel active" id="panel-q1">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q1.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q1.jpg" alt="Kumon Level N Q1 Answer">
                     </div>
-                    <div class="image-caption">
-                        <h3>Kumon Level N Test Answers - Sheet 1</h3>
-                        <p>Detailed algebra, coordinate locus equations, functions, and quadratic inequality solutions. Pay close attention to coordinate mappings.</p>
+                    <div class="panel-info">
+                        <h3>Question 1: Quadratic Forms</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Quadratic functions and vertex coordinate mappings.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Converting quadratic equations to standard form $y = a(x-h)^2 + k$ to identify the vertex coordinates $(h, k)$ easily.
+                        </div>
                     </div>
                 </div>
 
-                <!-- Sheet 2 -->
-                <div class="image-card">
-                    <div class="image-wrapper" onclick="openLightbox('images/kumon-math-level-n-test-answers-2.jpeg')">
-                        <img src="images/kumon-math-level-n-test-answers-2.jpeg" alt="Kumon Level N Math Test Answers Page 2">
-                        <div class="image-overlay">🔍 Click to Zoom</div>
+                <!-- Q2 Panel -->
+                <div class="tab-panel" id="panel-q2">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q2.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q2.jpg" alt="Kumon Level N Q2 Answer">
                     </div>
-                    <div class="image-caption">
-                        <h3>Kumon Level N Test Answers - Sheet 2</h3>
-                        <p>Focuses on progressions, infinite geometric sequences, functions evaluation, limits of derivatives, and slope tangents.</p>
+                    <div class="panel-info">
+                        <h3>Question 2: Polynomial Factoring</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Factoring higher-degree algebraic expressions.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Applying synthetic division or grouping methods to find rational roots of complex polynomials.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 Panel -->
+                <div class="tab-panel" id="panel-q3">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q3.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q3.jpg" alt="Kumon Level N Q3 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 3: Rational Expressions</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Simplifying fractional polynomials and stating domain constraints.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Factorizing numerator and denominator to cancel common factors. The denominator must never equal zero.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 Panel -->
+                <div class="tab-panel" id="panel-q4">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q4.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q4.jpg" alt="Kumon Level N Q4 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 4: Fractional Inequalities</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Solving inequalities involving rational expressions.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Setting up boundary intervals and testing sign changes on the coordinate number line.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 Panel -->
+                <div class="tab-panel" id="panel-q5">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q5.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q5.jpg" alt="Kumon Level N Q5 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 5: Nonlinear Systems</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Intersection points of lines and curves.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Equating system equations to solve for variables coordinates, checking for real vs. complex roots.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 Panel -->
+                <div class="tab-panel" id="panel-q6">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q6.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q6.jpg" alt="Kumon Level N Q6 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 6: Arithmetic Progressions</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Calculating nth terms and sums of arithmetic sequences.</p>
+                        <div class="educational-content">
+                            <strong>Formula:</strong> $a_n = a_1 + (n-1)d$ and $S_n = \frac{n}{2}(a_1 + a_n)$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q7 Panel -->
+                <div class="tab-panel" id="panel-q7">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q7.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q7.jpg" alt="Kumon Level N Q7 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 7: Geometric Sequences</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Finding common ratios and geometric progression terms.</p>
+                        <div class="educational-content">
+                            <strong>Formula:</strong> $a_n = a_1 \cdot r^{n-1}$. Essential foundation for exponential behaviors.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 Panel -->
+                <div class="tab-panel" id="panel-q8">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q8.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q8.jpg" alt="Kumon Level N Q8 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 8: Summation Notation</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Working with Sigma ($\Sigma$) series parameters.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Evaluating summation bounds using standard series properties for linear and quadratic terms.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q9 Panel -->
+                <div class="tab-panel" id="panel-q9">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q9.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q9.jpg" alt="Kumon Level N Q9 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 9: Infinite Series Convergence</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Convergence conditions for infinite geometric series.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Evaluating whether a series has a finite sum boundary based on the ratio magnitude $|r| < 1$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q10 Panel -->
+                <div class="tab-panel" id="panel-q10">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q10.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q10.jpg" alt="Kumon Level N Q10 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 10: Limits of Rational Functions</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Evaluating function limits as $x$ approaches a finite value.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Factoring out indeterminate $\frac{0}{0}$ terms to resolve the limit boundaries.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q11 Panel -->
+                <div class="tab-panel" id="panel-q11">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q11.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q11.jpg" alt="Kumon Level N Q11 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 11: Infinite Limits</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Limits as independent variables approach positive/negative infinity.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Dividing terms by the highest degree power in the denominator to isolate leading coefficient behaviors.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q12 Panel -->
+                <div class="tab-panel" id="panel-q12">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q12.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q12.jpg" alt="Kumon Level N Q12 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 12: Instantaneous Rates</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Concept of derivative as instantaneous slope tangent.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Finding the limiting value of secant slopes as the distance $\Delta x \to 0$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q13 Panel -->
+                <div class="tab-panel" id="panel-q13">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q13.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q13.jpg" alt="Kumon Level N Q13 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 13: Power Rule Differentiation</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Direct differentiation of polynomial expressions.</p>
+                        <div class="educational-content">
+                            <strong>Formula:</strong> $\frac{d}{dx}[x^n] = n x^{n-1}$. Applied term-by-term across algebra functions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q14 Panel -->
+                <div class="tab-panel" id="panel-q14">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q14.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q14.jpg" alt="Kumon Level N Q14 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 14: Quotient and Chain Rules</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Advanced rules of differentiation for fractional functions.</p>
+                        <div class="educational-content">
+                            <strong>Formula:</strong> $\frac{d}{dx}[\frac{u}{v}] = \frac{u'v - uv'}{v^2}$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q15 Panel -->
+                <div class="tab-panel" id="panel-q15">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q15.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q15.jpg" alt="Kumon Level N Q15 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 15: Critical Points & Extrema</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Identifying local maximum and minimum values.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Setting the first derivative equal to zero ($f'(x) = 0$) and checking signs.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q16 Panel -->
+                <div class="tab-panel" id="panel-q16">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q16.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q16.jpg" alt="Kumon Level N Q16 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 16: Applied Optimization</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Real-world optimization functions using derivative parameters.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Setting up functions to maximize/minimize parameters like volume, area, or efficiency under constraints.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q17 Panel -->
+                <div class="tab-panel" id="panel-q17">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q17.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q17.jpg" alt="Kumon Level N Q17 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 17: Indefinite Integrals</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Antiderivatives of polynomials.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Reversing differentiation rules and remembering to add the constant of integration ($+ C$).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q18 Panel -->
+                <div class="tab-panel" id="panel-q18">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q18.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q18.jpg" alt="Kumon Level N Q18 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 18: Definite Integrals & Area</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Evaluating exact areas under curves.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Calculating integrals over bounds $[a, b]$: $\int_a^b f(x)dx = F(b) - F(a)$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q19 Panel -->
+                <div class="tab-panel" id="panel-q19">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q19.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q19.jpg" alt="Kumon Level N Q19 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 19: Fundamental Theorem of Calculus</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Relationship between differentiation and integration.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Differentiating an integral function: $\frac{d}{dx} \int_a^x f(t)dt = f(x)$.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q20 Panel -->
+                <div class="tab-panel" id="panel-q20">
+                    <div class="panel-image-section" onclick="openLightbox('images/kumon-level-n-test-answers-new-q20.jpg')">
+                        <img src="images/kumon-level-n-test-answers-new-q20.jpg" alt="Kumon Level N Q20 Answer">
+                    </div>
+                    <div class="panel-info">
+                        <h3>Question 20: Comprehensive Review</h3>
+                        <p class="qa-card"><strong>Topic:</strong> Integration, derivatives, and limits synthesis exam.</p>
+                        <div class="educational-content">
+                            <strong>Concept:</strong> Combines functions graph behaviors with differential calculus techniques. Excellent final review.
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </section>
-
-        <!-- Step-by-Step Educational Explanations -->
-        <section class="intro-card">
-            <h2 class="section-title">Mathematical Breakdowns for Level N</h2>
-            
-            <div style="margin-top: 1.5rem;">
-                <div class="qa-card">
-                    <div class="qa-title">Key Topic: Limits of Functions</div>
-                    <p>Evaluating the limit as $x \to a$ of a rational function. If direct substitution results in an indeterminate form ($\frac{0}{0}$), you must factorize the numerator and denominator, cancel common terms, and then substitute the value. This technique is extensively tested on Sheet 2.</p>
-                </div>
-
-                <div class="qa-card" style="border-left-color: var(--primary);">
-                    <div class="qa-title">Key Topic: Infinite Geometric Series</div>
-                    <p>For a geometric progression with first term $a$ and common ratio $r$, the infinite sum exists if and only if $|r| < 1$. The sum is given by the formula:</p>
-                    <div class="educational-content" style="text-align: center; font-weight: bold; font-size: 1.25rem;">
-                        S = a / (1 - r)
-                    </div>
-                    <p style="margin-top: 0.75rem;">Problems on the Level N test verify your ability to compute values of $r$ from sequences and solve for $S$.</p>
-                </div>
-
-                <div class="qa-card">
-                    <div class="qa-title">Key Topic: Finding Locus of Points</div>
-                    <p>Understanding geometric locus. Sheet 1 displays problems where you must represent coordinate inequalities. Remember to verify boundary conditions (whether boundaries are included or excluded in the quadratic region).</p>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- Lightbox Zoom Modal Component -->
@@ -144,27 +383,44 @@
                 <a href="kumon-level-n-test-answers.html" class="footer-link">Level N Answers</a> |
                 <a href="kumon-level-o-test-answers.html" class="footer-link">Level O Answers</a>
             </div>
-            <p>&copy; 2026 Kumon Study Guides. Built for academic guidance and practice reference.</p>
+            <p>&copy; 2026 Kumon Study Guides. Built for academic guidance and reference.</p>
         </div>
     </footer>
 
-    <!-- Lightbox Controller Script -->
+    <!-- Tab switcher and Lightbox Controller Script -->
     <script>
+        function switchTab(tabId) {
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            const panels = document.querySelectorAll('.tab-content .tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            const targetBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(tabId));
+            if (targetBtn) targetBtn.classList.add('active');
+
+            const targetPanel = document.getElementById('panel-' + tabId);
+            if (targetPanel) targetPanel.classList.add('active');
+
+            if (targetBtn) {
+                targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        }
+
         const lightbox = document.getElementById('lightboxModal');
         const lightboxImg = document.getElementById('lightboxImage');
 
         function openLightbox(src) {
             lightboxImg.src = src;
             lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Stop background scrolling
+            document.body.style.overflow = 'hidden';
         }
 
         function closeLightbox() {
             lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto'; // Enable scrolling
+            document.body.style.overflow = 'auto';
         }
 
-        // Close lightbox on Escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeLightbox();
