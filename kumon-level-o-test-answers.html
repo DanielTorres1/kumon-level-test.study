@@ -57,23 +57,23 @@
             <!-- Scrollable Tab Bar -->
             <div class="tabs-nav-wrapper">
                 <div class="tabs-nav" id="tabsNav">
-                    <button class="tab-btn active" onclick="switchTab('sheet1')">Sheet 1</button>
-                    <button class="tab-btn" onclick="switchTab('sheet2')">Sheet 2</button>
-                    <button class="tab-btn" onclick="switchTab('q1')">Q1</button>
-                    <button class="tab-btn" onclick="switchTab('q2')">Q2</button>
-                    <button class="tab-btn" onclick="switchTab('q3')">Q3</button>
-                    <button class="tab-btn" onclick="switchTab('q4')">Q4</button>
-                    <button class="tab-btn" onclick="switchTab('q5')">Q5</button>
-                    <button class="tab-btn" onclick="switchTab('q6')">Q6</button>
-                    <button class="tab-btn" onclick="switchTab('q7')">Q7</button>
-                    <button class="tab-btn" onclick="switchTab('q8')">Q8</button>
-                    <button class="tab-btn" onclick="switchTab('q9')">Q9</button>
-                    <button class="tab-btn" onclick="switchTab('q10')">Q10</button>
-                    <button class="tab-btn" onclick="switchTab('q11')">Q11</button>
-                    <button class="tab-btn" onclick="switchTab('q12')">Q12</button>
-                    <button class="tab-btn" onclick="switchTab('q13')">Q13</button>
-                    <button class="tab-btn" onclick="switchTab('q14')">Q14</button>
-                    <button class="tab-btn" onclick="switchTab('q15')">Q15</button>
+                    <button class="tab-btn active" onclick="switchTab(this, 'sheet1')">Sheet 1</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'sheet2')">Sheet 2</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q1')">Q1</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q2')">Q2</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q3')">Q3</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q4')">Q4</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q5')">Q5</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q6')">Q6</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q7')">Q7</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q8')">Q8</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q9')">Q9</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q10')">Q10</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q11')">Q11</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q12')">Q12</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q13')">Q13</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q14')">Q14</button>
+                    <button class="tab-btn" onclick="switchTab(this, 'q15')">Q15</button>
                 </div>
             </div>
 
@@ -344,25 +344,24 @@
 
     <!-- Tab switcher and Lightbox Controller Script -->
     <script>
-        function switchTab(tabId) {
+        function switchTab(btn, tabId) {
             // Remove active class from all buttons
             const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons.forEach(b => b.classList.remove('active'));
 
             // Remove active class from all panels
             const panels = document.querySelectorAll('.tab-content .tab-panel');
             panels.forEach(panel => panel.classList.remove('active'));
 
             // Add active class to target elements
-            const targetBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(tabId));
-            if (targetBtn) targetBtn.classList.add('active');
+            if (btn) btn.classList.add('active');
 
             const targetPanel = document.getElementById('panel-' + tabId);
             if (targetPanel) targetPanel.classList.add('active');
 
-            // Optional: Smoothly scroll tab button into view on mobile
-            if (targetBtn) {
-                targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            // Smoothly scroll tab button into view on mobile
+            if (btn) {
+                btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             }
         }
 
